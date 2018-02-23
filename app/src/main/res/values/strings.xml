@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RO Driving Licence Quiz</string>
+    <string name="questionA">1.What\'s your name?</string>
+    <string name="questionB">2.Which is the legal age to apply for a driving licence?</string>
+    <string name="questionC">3.A driver\'s licence can have a validity of?</string>
+    <string name="questionD">4.Wearing of seat belts are compulsory for?</string>
+    <string name="questionE">5.On which side of the road you can drive?</string>
+    <string name="layout_weight">1</string>
+    <string name="text_16_years">16 years</string>
+    <string name="text_18_years">18 years</string>
+    <string name="checkBox_5_years">5 years</string>
+    <string name="checkBox_10_years">10 years</string>
+    <string name="front_seats">front seats</string>
+    <string name="back_seats">back seats</string>
+    <string name="left_hand_side">left-hand side</string>
+    <string name="right_hand_side">right-hand side</string>
+    <string name="submit">submit</string>
+
+    <string name="subject_name">RO Driving licence score for\ </string>
+    <string name="result_text">Your Quiz Score:\ </string>
+    <string name="toast_string1">\ scored: \</string>
+    <string name="toast_string2">/4</string>
+
+
+</resources>
