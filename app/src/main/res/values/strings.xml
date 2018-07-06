@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">RO Driving Licence Quiz</string>
-    <string name="questionA">1.What\'s your name?</string>
+    <string name="questionA">1.For which EU country stands RO?</string>
     <string name="questionB">2.Which is the legal age to apply for a driving licence?</string>
     <string name="questionC">3.A driver\'s licence can have a validity of?</string>
     <string name="questionD">4.Wearing of seat belts are compulsory for?</string>
@@ -16,10 +16,10 @@
     <string name="right_hand_side">right-hand side</string>
     <string name="submit">submit</string>
 
-    <string name="subject_name">RO Driving licence score for\ </string>
-    <string name="result_text">Your Quiz Score:\ </string>
-    <string name="toast_string1">\ scored: \</string>
-    <string name="toast_string2">/4</string>
+    <string name="subject_name">RO Driving licence score</string>
+    <string name="result_text">Your Quiz Score:%d </string>
+    <string name="toast_string">Scored: %d /5</string>
+
 
 
 </resources>

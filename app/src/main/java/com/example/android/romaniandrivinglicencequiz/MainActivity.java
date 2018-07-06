@@ -15,11 +15,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    /**
-     * Variables's declaration.
-     */
-
-    int score;
     RadioButton a3;
     CheckBox a4;
     CheckBox a5;
@@ -27,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
     CheckBox a7;
     RadioButton a9;
     EditText nameField;
+    /**
+     * Variables's declaration.
+     */
+
+    private int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +50,20 @@ public class MainActivity extends AppCompatActivity {
     private void calculateScore() {
 
         /**
+         *  Question 1 is evaluated, if the correct answer is "Romania", adds 1 point to the score.
+         */
+
+        String country_name = nameField.getText().toString().trim();
+
+        score = 0;
+
+        if (country_name.equalsIgnoreCase("Romania")) {
+            score += 1;
+        } else {
+            score += 0;
+        }
+
+        /**
          *  Correct RadioButtons and CheckBoxes answers are pressed and stored in a boolean variable.
          */
 
@@ -63,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
         /**
          * Evaluates if the correct RadioButtons pressed ==> true then adds 1 point to the score
          */
-        score = 0;
 
         if (isA3) {
             score += 1;
@@ -92,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             score += 0;
         }
-
     }
 
     /**
@@ -110,16 +122,10 @@ public class MainActivity extends AppCompatActivity {
         calculateScore();
 
         /**
-         *  Question 1 is not evaluated as true or false, just requests an string input as a name.
-         */
-
-        String name_field = nameField.getText().toString();
-
-        /**
          * Show an message with the score as a toast.
          */
 
-        Toast toast = Toast.makeText(this, name_field + getString(R.string.toast_string1) + score + getString(R.string.toast_string2), Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, getString(R.string.toast_string, score), Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
 
@@ -129,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.subject_name)  + name_field);
-        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.result_text) + score);
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.subject_name));
+        intent.putExtra(Intent.EXTRA_TEXT, getString(R.string.result_text, score));
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
