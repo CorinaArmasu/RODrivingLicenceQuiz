@@ -1,6 +1,6 @@
 ## PROJECT SPECIFICATION
 
-   Quiz App 
+   3.Quiz App 
 
 # Layout
 
