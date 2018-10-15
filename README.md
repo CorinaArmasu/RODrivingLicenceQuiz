@@ -52,3 +52,9 @@ The code is properly formatted i.e. there are no unnecessary blank lines; there 
 The code also has proper indentation when defining variables and methods.
 
 
+![screenshot_20181014-221719](https://user-images.githubusercontent.com/34723009/46941349-97b77800-d073-11e8-94ab-eedae7df48cf.png)
+![screenshot_20181014-221726](https://user-images.githubusercontent.com/34723009/46941359-9a19d200-d073-11e8-9ab7-868139695167.png)
+![screenshot_20181014-221735](https://user-images.githubusercontent.com/34723009/46941363-9be39580-d073-11e8-8ac9-7ef99f3eb0e6.png)
+![screenshot_20181014-221743](https://user-images.githubusercontent.com/34723009/46941370-9e45ef80-d073-11e8-94b9-85db27f1ac6c.png)
+![screenshot_20180205-014803](https://user-images.githubusercontent.com/34723009/46941380-a140e000-d073-11e8-8a0d-62b309df2bfb.png)
+
